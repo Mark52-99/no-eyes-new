@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="No Eyes — modern fashion collection landing page.">
+  <title>No Eyes — New Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="loader"></div>
+  </div>
+
+  <header class="header" id="section1">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#section1" aria-label="No Eyes home">
+        <img src="../img/Group 6.png" alt="No Eyes logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="#section1">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#faq">FAQ</a>
+        <button class="nav-contact" type="button" onclick="toggleSidebar()">Contact</button>
+      </div>
+
+      <button id="view-cart" class="cart-button" type="button" aria-label="Open shopping bag">
+        Bag <span id="cart-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-image hero-woman">
+        <img src="/img/three woman 1.png" alt="No Eyes women's fashion collection">
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">No Eyes / 2025</p>
+        <h1 class="typing-title" id="typing-title">NEW COLLECTION</h1>
+        <p class="hero-copy">
+          A balance of classic silhouettes, modern details and everyday comfort.
+          Designed for people who value quality in every detail.
+        </p>
+        <a class="round-button" href="#collection">Explore</a>
+      </div>
+
+      <div class="hero-image hero-man">
+        <img src="/img/Group 16.png" alt="No Eyes men's fashion collection">
+      </div>
+    </section>
+
+    <section class="collection container" id="collection">
+      <div class="section-heading">
+        <p class="eyebrow">Selected pieces</p>
+        <h2>THE COLLECTION</h2>
+      </div>
+
+      <article class="product-card" data-aos="fade-up">
+        <div class="product-info">
+          <p class="product-number">01</p>
+          <h3>Loafers for men</h3>
+          <p>Elegant leather-inspired loafers combining a timeless silhouette with a clean modern finish.</p>
+          <span class="price">$100</span>
+        </div>
+        <div class="product-image">
+          <img src="/img/lof.webp" alt="Loafers for men">
+        </div>
+        <button class="round-button buy-now" type="button" data-id="1" data-name="Loafers for men" data-price="100">Buy</button>
+      </article>
+
+      <article class="product-card reverse" data-aos="fade-up">
+        <div class="product-info">
+          <p class="product-number">02</p>
+          <h3>Jacket for women</h3>
+          <p>A refined everyday jacket with a confident silhouette, premium feel and versatile styling.</p>
+          <span class="price">$150</span>
+        </div>
+        <div class="product-image">
+          <img src="/img/pidjack.jpg" alt="Women's jacket">
+        </div>
+        <button class="round-button buy-now" type="button" data-id="2" data-name="Jacket for women" data-price="150">Buy</button>
+      </article>
+
+      <article class="product-card" data-aos="fade-up">
+        <div class="product-info">
+          <p class="product-number">03</p>
+          <h3>Hat for men</h3>
+          <p>A minimal accessory that adds character while keeping the look clean and sophisticated.</p>
+          <span class="price">$70</span>
+        </div>
+        <div class="product-image">
+          <img src="/img/hat.jpg" alt="Hat for men">
+        </div>
+        <button class="round-button buy-now" type="button" data-id="3" data-name="Hat for men" data-price="70">Buy</button>
+      </article>
+    </section>
+
+    <section class="statement container" data-aos="fade-up">
+      <p>LESS NOISE.<br><em>MORE STYLE.</em></p>
+    </section>
+
+    <section class="faq-section container" id="faq">
+      <div>
+        <p class="eyebrow">Need help?</p>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How can I place an order?</summary>
+          <p>Select a product and add it to the bag. The bag keeps your selected items in this browser.</p>
+        </details>
+        <details>
+          <summary>Can I book a visit?</summary>
+          <p>Use the contact panel to connect with the store and arrange a visit.</p>
+        </details>
+        <details>
+          <summary>How can I contact you?</summary>
+          <p>Open the Contact button in the navigation to see the available contact details.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="eyebrow">Need help?</p>
+        <a href="#faq">FAQs</a>
+        <a href="#faq">Delivery</a>
+        <a href="#faq">Privacy policy</a>
+      </div>
+
+      <div class="footer-brand">
+        <img src="/img/Group 6.png" alt="No Eyes logo">
+        <p>© 2026 No Eyes. All rights reserved.</p>
+      </div>
+
+      <div>
+        <p class="eyebrow">More information</p>
+        <a href="#collection">Collection</a>
+        <button type="button" onclick="toggleSidebar()">Contact</button>
+        <a href="#section1">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="close-btn" type="button" onclick="toggleSidebar()" aria-label="Close contact panel">&times;</button>
+    <p class="eyebrow">Get in touch</p>
+    <h2>Contact</h2>
+    <a href="mailto:noeyes@gmail.com">noeyes@gmail.com</a>
+    <a href="tel:+123456789">+123 456 789</a>
+  </aside>
+
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true">
+    <div class="cart-panel">
+      <button class="close-btn" type="button" onclick="closeCart()" aria-label="Close shopping bag">&times;</button>
+      <p class="eyebrow">Your selection</p>
+      <h2>Shopping bag</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <button class="checkout-button" type="button" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
